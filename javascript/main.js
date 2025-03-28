@@ -1,25 +1,88 @@
 let links = document.querySelectorAll(".header .container .links li a");
-links.forEach(link => {
-  link.addEventListener("click", e => {
-    links.forEach(link => {
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    links.forEach((link) => {
       link.classList.remove("active");
     });
     e.target.classList.add("active");
   });
 });
 let bars = document.getElementById("bars");
-bars.onclick = _ => {
+bars.onclick = (_) => {
   let links = document.getElementById("links");
   links.classList.toggle("open");
 };
 let userIcon = document.getElementById("user");
-userIcon.addEventListener("click", _ => {
-  let pupop = document.querySelector(".pupop");
-  if (pupop) {
-    pupop.remove();
+userIcon.addEventListener("click", (_) => {
+  let popup = document.querySelector(".popup");
+  if (popup) {
+    popup.remove();
   } else {
-    let pupop = document.createElement("div");
-    pupop.classList.add("pupop");
-    document.body.appendChild(pupop);
+    let popup = document.createElement("div");
+    popup.classList.add("popup");
+    document.body.appendChild(popup);
+    let close = document.createElement("span");
+    close.classList.add("close-but");
+    close.appendChild(document.createTextNode("X"));
+    popup.appendChild(close);
+    let title = document.createElement("h2");
+    title.classList.add("login-title");
+    let titleText = document.createTextNode("login");
+    title.appendChild(titleText);
+      popup.appendChild(title);
+      let form = document.createElement("form");
+      form.method = "POST";
+      popup.appendChild(form);
+    let email = document.createElement("input");
+    email.classList.add("email", "::before");
+    email.type = "email";
+    email.placeholder = "Email";
+    email.name = "email";
+    form.appendChild(email);
+    let password = document.createElement("input");
+    password.classList.add("password");
+    password.type = "password";
+    password.placeholder = "Password";
+    password.name = "password";
+    form.appendChild(password);
+    let link = document.createElement("a");
+    link.classList.add("link");
+    link.href = "#";
+    let linkText = document.createTextNode("Forgot Password?");
+    link.appendChild(linkText);
+    form.appendChild(link);
+    let butLogin = document.createElement("input");
+    butLogin.classList.add("but-login");
+    butLogin.type = "submit";
+    butLogin.value = "LOGIN";
+    form.appendChild(butLogin);
+    let signBut = document.createElement("a");
+      signBut.classList.add("sign-but");
+      signBut.href = "sign-in.html";
+    signBut.appendChild(document.createTextNode("SIGN IN"));
+    popup.appendChild(signBut);
+    let line = document.createElement("div");
+    line.classList.add("line");
+    popup.appendChild(line);
+    let box = document.createElement("div");
+    box.classList.add("box");
+    let google = document.createElement("a");
+    google.classList.add("google");
+    google.href = "#";
+    let googleText = document.createTextNode("Google");
+    google.appendChild(googleText);
+    box.appendChild(google);
+    let apple = document.createElement("a");
+    apple.classList.add("apple");
+    apple.href = "#";
+    let appleText = document.createTextNode("Apple");
+    apple.appendChild(appleText);
+    box.appendChild(apple);
+    popup.appendChild(box);
   }
 });
+document.onclick = (e) => {
+  if (e.target.classList.contains("close-but")) {
+    document.querySelector(".popup").remove();
+  }
+};

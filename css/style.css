@@ -93,6 +93,7 @@ a {
     gap: 20px;
     border-top: 3px solid var(--main-color);
     transition: all 0.3s;
+    z-index: 1000;
   }
 }
 
@@ -120,19 +121,112 @@ a {
     display: inline-block;
   }
 }
-.user {
+.header .container .buttons .user {
+  color: #FFF;
+  margin-left: 20px;
   cursor: pointer;
 }
-.pupop {
-  background: violet;
+.popup {
+  background: var(--secondary-color);
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 450px;
+  height: 500px;
   width: calc(100% - 30px);
   max-width: 500px;
+  padding: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 6px;
   z-index: 1000;
+}
+.popup .close-but {
+  display: block;
+  color: #FFF;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: fit-content;
+  padding: 5px;
+  margin-left: auto;
+}
+.popup .login-title {
+  color: var(--main-color);
+  text-align: center;
+  margin: 30px auto;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.popup input,
+.popup .sign-but {
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  border: none;
+  padding: 10px 10px 10px 40px;
+  position: relative;
+}
+.popup .password {
+  margin-bottom: 10px;
+}
+.popup .link {
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding-left: 10px;
+  color: #FFF;
+  font-size: 14px;
+}
+.popup .but-login {
+  font-weight: bold;
+  padding: 0;
+  background: var(--main-color);
+  text-align: center;
+  cursor: pointer;
+}
+.popup .sign-but {
+  font-weight: bold;
+  background: var(--main-color);
+  text-align: center;
+  color: #000;
+  padding: 7px;
+}
+.popup .line {
+  background: #FFF;
+  width: 300px;
+  height: 2px;
+  margin: 40px auto;
+  position: relative;
+}
+.popup .line::before {
+  content: "Or sign in with";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--secondary-color);
+  color: #FFF;
+  padding: 10px;
+}
+.popup .box {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+}
+.popup .google,
+.popup .apple {
+  display: block;
+  flex: 1;
+  background: #FFF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #000
 }
 /* .header .container .buttons .login {
     display: inline-block;
@@ -151,7 +245,3 @@ a {
     border-radius: 6px;
     text-align: center;
 } */
-.header .container .buttons .user {
-  color: #FFF;
-  margin-left: 20px;
-}
