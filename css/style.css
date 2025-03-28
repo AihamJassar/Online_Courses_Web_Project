@@ -120,6 +120,9 @@ a {
     display: inline-block;
   }
 }
+.user {
+  cursor: pointer;
+}
 .pupop {
   background: violet;
   position: fixed;

@@ -14,7 +14,12 @@ bars.onclick = _ => {
 };
 let userIcon = document.getElementById("user");
 userIcon.addEventListener("click", _ => {
-  let pupop = document.createElement("div");
-  pupop.classList.add("container", "pupop");
-  document.body.appendChild(pupop);
+  let pupop = document.querySelector(".pupop");
+  if (pupop) {
+    pupop.remove();
+  } else {
+    let pupop = document.createElement("div");
+    pupop.classList.add("pupop");
+    document.body.appendChild(pupop);
+  }
 });
