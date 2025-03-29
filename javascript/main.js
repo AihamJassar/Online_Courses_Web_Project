@@ -50,6 +50,9 @@ userIcon.addEventListener("click", (_) => {
     password.placeholder = "Password";
     password.name = "password";
     passwordLabel.appendChild(password);
+    let showPassword = document.createElement("i");
+    showPassword.classList.add("fa-solid", "fa-eye-slash", "show-password");
+    passwordLabel.appendChild(showPassword);
     form.appendChild(passwordLabel);
     let link = document.createElement("a");
     link.classList.add("link");
@@ -90,8 +93,16 @@ userIcon.addEventListener("click", (_) => {
 document.onclick = (e) => {
   if (e.target.classList.contains("close-but")) {
     document.querySelector(".popup").remove();
+  } else if (e.target.classList.contains("fa-eye") || e.target.classList.contains("fa-eye-slash")) {
+    let password = document.querySelector(".password");
+    if(e.target.classList.contains("fa-eye-slash")) {
+      e.target.classList.remove("fa-eye-slash");
+      e.target.classList.add("fa-eye");
+      password.type = "text";
+    } else {
+      e.target.classList.remove("fa-eye");
+      e.target.classList.add("fa-eye-slash");
+      password.type = "password";
+    }
   }
 };
-document.querySelector(".popup .label-password::after").onclick = function (e) {
-  this.style.content = "\fp6e";
-}
