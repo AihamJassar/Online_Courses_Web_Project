@@ -5,6 +5,8 @@ links.forEach((link) => {
       link.classList.remove("active");
     });
     e.target.classList.add("active");
+    let mene = document.getElementById("links");
+    mene.classList.toggle("open");
   });
 });
 let bars = document.getElementById("bars");
@@ -93,9 +95,12 @@ userIcon.addEventListener("click", (_) => {
 document.onclick = (e) => {
   if (e.target.classList.contains("close-but")) {
     document.querySelector(".popup").remove();
-  } else if (e.target.classList.contains("fa-eye") || e.target.classList.contains("fa-eye-slash")) {
+  } else if (
+    e.target.classList.contains("fa-eye") ||
+    e.target.classList.contains("fa-eye-slash")
+  ) {
     let password = document.querySelector(".password");
-    if(e.target.classList.contains("fa-eye-slash")) {
+    if (e.target.classList.contains("fa-eye-slash")) {
       e.target.classList.remove("fa-eye-slash");
       e.target.classList.add("fa-eye");
       password.type = "text";

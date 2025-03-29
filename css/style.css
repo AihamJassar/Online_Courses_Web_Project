@@ -2,6 +2,8 @@
 :root {
   --main-color: #fdf10c;
   --secondary-color: #333;
+  --section-color: #000;
+  --padding-section: 60px;
 }
 
 /* Reset Elements */
@@ -17,7 +19,6 @@ html {
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  height: 2000px;
 }
 
 ul {
@@ -62,6 +63,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 .header .container {
@@ -73,7 +75,7 @@ a {
 
 .header .container .logo {
   color: var(--main-color);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header .container .links {
@@ -102,7 +104,7 @@ a {
 }
 
 .header .container .links li a {
-  color: #FFF;
+  color: #fff;
 }
 
 .header .container .links li a:hover,
@@ -111,7 +113,7 @@ a {
 }
 
 .header .container .buttons .bars {
-  color: #FFF;
+  color: #fff;
   display: none;
   cursor: pointer;
 }
@@ -123,7 +125,7 @@ a {
 }
 
 .header .container .buttons .user {
-  color: #FFF;
+  color: #fff;
   margin-left: 20px;
   cursor: pointer;
 }
@@ -151,7 +153,7 @@ a {
 
 .popup .close-but {
   display: block;
-  color: #FFF;
+  color: #fff;
   cursor: pointer;
   position: absolute;
   top: 15px;
@@ -224,7 +226,7 @@ a {
   margin: 10px auto;
   width: 300px;
   padding-left: 10px;
-  color: #FFF;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -245,7 +247,7 @@ a {
 }
 
 .popup .line {
-  background: #FFF;
+  background: #fff;
   width: 300px;
   height: 2px;
   margin: 40px auto;
@@ -259,7 +261,7 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: var(--secondary-color);
-  color: #FFF;
+  color: #fff;
   padding: 10px;
 }
 
@@ -274,10 +276,184 @@ a {
 .popup .apple {
   display: block;
   flex: 1;
-  background: #FFF;
+  background: #fff;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
   font-weight: bold;
-  color: #000
+  color: #000;
+}
+/* Landing */
+.landing {
+  background: var(--section-color);
+  min-height: calc(100vh);
+}
+.landing .container {
+  display: flex;
+  gap: 20px;
+  padding-top: calc(72px + var(--padding-section));
+  padding-bottom: var(--padding-section);
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .landing .container {
+    flex-direction: column;
+  }
+}
+.landing .container .intro {
+  flex: 1;
+}
+.landing .container .intro h2 {
+  font-size: 50px;
+  width: 400px;
+}
+@media (max-width: 767px) {
+  .landing .container .intro h2 {
+    width: 100%;
+  }
+}
+.landing .container .intro h2 span {
+  color: var(--main-color);
+}
+.landing .container .intro p {
+  margin: 30px 0;
+  line-height: 1.4;
+  font-size: 18px;
+}
+.landing .container .intro a {
+  display: block;
+  width: 210px;
+  border: 2px solid var(--main-color);
+  padding: 10px 20px;
+  color: var(--main-color);
+  border-radius: 6px;
+  margin-top: 50px;
+  position: relative;
+  text-transform: uppercase;
+}
+.landing .container .intro a::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f054";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+}
+.landing .container .image {
+  flex: 1;
+  text-align: center;
+}
+/* about section */
+.about {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  background: var(--secondary-color);
+  text-align: center;
+}
+.about .container .content {
+  width: 700px;
+  margin: auto;
+  padding: 50px 20px;
+  border: 3px solid var(--main-color);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .about .container .content {
+    width: 100%;
+  }
+}
+.about .container .content h4 {
+  color: var(--main-color);
+}
+.about .container .content p:first-of-type {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.about .container .content p:first-of-type span {
+  color: var(--main-color);
+}
+.about .container .content p:last-of-type {
+  line-height: 1.4;
+}
+/* Courses Section */
+.courses {
+  background: var(--secondary-color);
+  padding-bottom: var(--padding-section);
+  color: #fff;
+  position: relative;
+}
+.courses .container h2 {
+  width: 200px;
+  line-height: 1.4;
+}
+.courses .container h2 span {
+  color: var(--main-color);
+}
+
+.courses .container p {
+  width: 600px;
+  line-height: 1.4;
+  margin: 30px 0;
+}
+.courses .container .content .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+.courses .container .content .boxes .box {
+  background: var(--section-color);
+}
+.courses .container .content .boxes .box.active {
+  transform: translateY(-10px);
+  box-shadow: 1px 1px 1px 1px var(--main-color), -1px -1px 10px 0 var(--main-color);
+}
+.courses .container .content .boxes .box img {
+  width: 100%;
+}
+.courses .container .content .boxes .box div {
+  padding: 30px;
+}
+.courses .container .content .boxes .box div h4 {
+  margin-bottom: 20px;
+}
+.courses .container .content .boxes .box div a {
+  display: block;
+  color: var(--main-color);
+  width: 160px;
+  padding: 10px 15px;
+  border: 3px solid var(--main-color);
+  border-radius: 6px;
+  position: relative;
+}
+.courses .container .content .boxes .box div a::after {
+  font-family: "Font Awesome 6 Free";
+  content: "\f054";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: 17px;
+  transform: translateY(-50%);
+}
+.courses .container .content > span {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 40px;
+ height: 40px;
+ border: 3px solid var(--main-color);
+ border-radius: 6px;
+}
+.courses .container .content > span.left {
+  left: 40px;
+}
+.courses .container .content > span.right {
+  right: 40px;
+}
+.courses .container .content > span i {
+  color: var(--main-color);
 }
