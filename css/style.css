@@ -140,6 +140,12 @@ a {
   border-radius: 6px;
   z-index: 1000;
 }
+@media (max-width: 768px) {
+  .popup {
+    padding: 10px;
+  }
+}
+
 .popup .close-but {
   display: block;
   color: #FFF;
