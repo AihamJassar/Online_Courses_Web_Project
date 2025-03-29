@@ -29,22 +29,28 @@ userIcon.addEventListener("click", (_) => {
     title.classList.add("login-title");
     let titleText = document.createTextNode("login");
     title.appendChild(titleText);
-      popup.appendChild(title);
-      let form = document.createElement("form");
-      form.method = "POST";
-      popup.appendChild(form);
+    popup.appendChild(title);
+    let form = document.createElement("form");
+    form.method = "POST";
+    popup.appendChild(form);
+    let emailLabel = document.createElement("label");
+    emailLabel.classList.add("email-label");
     let email = document.createElement("input");
     email.classList.add("email", "::before");
     email.type = "email";
     email.placeholder = "Email";
     email.name = "email";
-    form.appendChild(email);
+    emailLabel.appendChild(email);
+    form.appendChild(emailLabel);
+    let passwordLabel = document.createElement("label");
+    passwordLabel.classList.add("password-label");
     let password = document.createElement("input");
     password.classList.add("password");
     password.type = "password";
     password.placeholder = "Password";
     password.name = "password";
-    form.appendChild(password);
+    passwordLabel.appendChild(password);
+    form.appendChild(passwordLabel);
     let link = document.createElement("a");
     link.classList.add("link");
     link.href = "#";
@@ -57,8 +63,8 @@ userIcon.addEventListener("click", (_) => {
     butLogin.value = "LOGIN";
     form.appendChild(butLogin);
     let signBut = document.createElement("a");
-      signBut.classList.add("sign-but");
-      signBut.href = "sign-in.html";
+    signBut.classList.add("sign-but");
+    signBut.href = "sign-in.html";
     signBut.appendChild(document.createTextNode("SIGN IN"));
     popup.appendChild(signBut);
     let line = document.createElement("div");
@@ -86,3 +92,6 @@ document.onclick = (e) => {
     document.querySelector(".popup").remove();
   }
 };
+document.querySelector(".popup .label-password::after").onclick = function (e) {
+  this.style.content = "\fp6e";
+}

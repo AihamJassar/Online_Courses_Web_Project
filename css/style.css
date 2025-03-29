@@ -145,7 +145,6 @@ a {
     padding: 10px;
   }
 }
-
 .popup .close-but {
   display: block;
   color: #FFF;
@@ -164,6 +163,36 @@ a {
   text-transform: uppercase;
   font-size: 35px;
 }
+.popup label {
+  position: relative;
+  display: block;
+  margin: 20px auto;
+  width: 300px;
+  height: 30px;
+  border-radius: 20px;
+  border:  none;
+}
+.popup label::before,
+.popup .password-label::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.popup .email-label::before {
+  content: "\f0e0";
+  left: 15px;
+}
+.popup .password-label::before {
+  content: "\f023";
+  left: 15px;
+}
+.popup .password-label::after {
+  content: "\f070";
+  right: 15px;
+  cursor: pointer;
+}
 .popup input,
 .popup .sign-but {
   display: block;
@@ -173,7 +202,9 @@ a {
   border-radius: 20px;
   border: none;
   padding: 10px 10px 10px 40px;
-  position: relative;
+}
+.popup input:focus {
+  outline: none;
 }
 .popup .password {
   margin-bottom: 10px;
