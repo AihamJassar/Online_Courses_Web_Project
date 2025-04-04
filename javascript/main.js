@@ -1,14 +1,22 @@
+// import Swiper from 'swiper';
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/pagination';
+
 let links = document.querySelectorAll(".header .container .links li a");
 links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    links.forEach((link) => {
-      link.classList.remove("active");
-    });
-    e.target.classList.add("active");
+  link.addEventListener("click", addActiveLink);
+  link.addEventListener("click", (_) => {
     let mene = document.getElementById("links");
     mene.classList.toggle("open");
   });
 });
+function addActiveLink(e) {
+  links.forEach((link) => {
+    link.classList.remove("active");
+  });
+  e.target.classList.add("active");
+}
 let bars = document.getElementById("bars");
 bars.onclick = (_) => {
   let links = document.getElementById("links");
@@ -111,3 +119,83 @@ document.onclick = (e) => {
     }
   }
 };
+const swiper = new Swiper(".courses .swiper", {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 20,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+// testimonies
+const swiperTest = new Swiper(".testimonies .swiper", {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 30,
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 1,
+
+  // And if we need scrollbar
+  // scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+});
+let sections = document.querySelectorAll("body > div[id]");
+window.addEventListener("scroll", (_) => {
+  let current = "";
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    console.log(section);
+    console.log(sectionHeight);
+    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+  links.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+});
