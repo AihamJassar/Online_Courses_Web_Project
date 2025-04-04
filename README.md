@@ -48,4 +48,4 @@ This project is a web-based platform designed to provide users with access to a 
 This project is licensed under the [MIT License](LICENSE).
 
 ## Contact
-For any inquiries, please contact [your-email@example.com](mailto:your-email@example.com).
+For any inquiries, please contact [aihamjassar@gmail.com](mailto:aihamjassar@gmail.com).
