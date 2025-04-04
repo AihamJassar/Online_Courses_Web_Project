@@ -1,8 +1,3 @@
-// import Swiper from 'swiper';
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/pagination';
-
 let links = document.querySelectorAll(".header .container .links li a");
 links.forEach((link) => {
   link.addEventListener("click", addActiveLink);
@@ -120,20 +115,14 @@ document.onclick = (e) => {
   }
 };
 const swiper = new Swiper(".courses .swiper", {
-  // Optional parameters
-  // direction: 'vertical',
   loop: true,
   grabCursor: true,
   spaceBetween: 20,
-
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -149,36 +138,22 @@ const swiper = new Swiper(".courses .swiper", {
       slidesPerView: 3,
     },
   },
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
 // testimonies
 const swiperTest = new Swiper(".testimonies .swiper", {
-  // Optional parameters
-  // direction: 'vertical',
   loop: true,
   grabCursor: true,
   spaceBetween: 30,
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
-
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   slidesPerView: 1,
-
-  // And if we need scrollbar
-  // scrollbar: {
-  //   el: '.swiper-scrollbar',
-  // },
 });
 let sections = document.querySelectorAll("body > div[id]");
 window.addEventListener("scroll", (_) => {
