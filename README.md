@@ -21,10 +21,10 @@ This project is a web-based platform designed to provide users with access to a 
 ![Home Page](screenshots/home_page.png)
 
 ### Courses
-![Course Details](screenshots/courses.png)
+![Courses](screenshots/courses.png)
 
 ### Teachers
-![User Dashboard](screenshots/teachers.png)
+![teachers](screenshots/teachers.png)
 
 ## Installation
 1. Clone the repository:
