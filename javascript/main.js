@@ -1,10 +1,6 @@
 let links = document.querySelectorAll(".header .container .links li a");
 links.forEach((link) => {
   link.addEventListener("click", addActiveLink);
-  link.addEventListener("click", (_) => {
-    let mene = document.getElementById("links");
-    mene.classList.toggle("open");
-  });
 });
 function addActiveLink(e) {
   links.forEach((link) => {
@@ -114,6 +110,7 @@ document.onclick = (e) => {
     }
   }
 };
+// Courses
 const swiper = new Swiper(".courses .swiper", {
   loop: true,
   grabCursor: true,
@@ -161,8 +158,6 @@ window.addEventListener("scroll", (_) => {
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
-    console.log(section);
-    console.log(sectionHeight);
     if (window.scrollY >= sectionTop - sectionHeight / 3) {
       current = section.getAttribute("id");
     }
