@@ -1,0 +1,15 @@
+{
+  "id": 20,
+  "title": "Course 20 Title",
+  "description": "Step-by-step guide to mastering this field",
+  "category": "Web Development",
+  "rating": 4.6,
+  "reviews": 263,
+  "students": 693,
+  "lectures": 31,
+  "hours": 18,
+  "instructor": {
+    "name": "John Doe",
+    "image": "images/instructor-3.jpg"
+  }
+}

@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/signin.css">
     <title>Signin</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon_32x32.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/signin.css">
 </head>
+
 <body>
+
+    <form action="">
+        <div class="title">
+            <h1>Welcome to Learn.com</h1>
+        </div>
+        <div class="name">
+            <div class="first-name">
+                <label for="first-name">First Name</label>
+                <br>
+                <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+            </div>
+            <div class="last-name">
+                <label for="last-name">Last Name</label>
+                <br>
+                <input type="text" id="last-name" name="last-name" placeholder="Enter your last name" required>
+            </div>
+        </div>
+        <div class="email">
+            <label for="email">Email</label>
+            <br>
+            <i class="fa-solid fa-envelope email-icon"></i>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+        <div class="phone">
+            <label for="phone">Phone</label>
+            <br>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone">
+        </div>
+        <div class="password">
+            <label for="password">Password</label>
+            <br>
+            <i class="fa-solid fa-eye-slash show-password"></i>
+            <i class="fa-solid fa-lock password-icon"></i>
+            <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </div>
+        <div>
+            <input type="submit" value="create account" id="submit">
+        </div>
+    </form>
+
     <script src="javascript/signin.js"></script>
 </body>
+
 </html>

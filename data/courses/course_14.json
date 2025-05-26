@@ -1,0 +1,15 @@
+{
+  "id": 14,
+  "title": "Course 14 Title",
+  "description": "Step-by-step guide to mastering this field",
+  "category": "Web Development",
+  "rating": 4.0,
+  "reviews": 407,
+  "students": 610,
+  "lectures": 57,
+  "hours": 5,
+  "instructor": {
+    "name": "Sara Ali",
+    "image": "images/instructor-2.jpg"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": 1,
+  "title": "Course 1 Title",
+  "description": "Comprehensive course with real-world projects and case studies",
+  "category": "Web Development",
+  "rating": 4.9,
+  "reviews": 198,
+  "students": 528,
+  "lectures": 38,
+  "hours": 26,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  }
+}

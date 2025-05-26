@@ -1,0 +1,15 @@
+{
+  "id": 6,
+  "title": "Course 6 Title",
+  "description": "Learn to build full-stack web applications from scratch to professional level",
+  "category": "Web Development",
+  "rating": 4.0,
+  "reviews": 479,
+  "students": 1091,
+  "lectures": 32,
+  "hours": 25,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  }
+}

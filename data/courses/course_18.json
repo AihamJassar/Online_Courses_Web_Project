@@ -1,0 +1,15 @@
+{
+  "id": 18,
+  "title": "Course 18 Title",
+  "description": "Build real applications and gain practical experience",
+  "category": "Web Development",
+  "rating": 4.8,
+  "reviews": 199,
+  "students": 1434,
+  "lectures": 52,
+  "hours": 20,
+  "instructor": {
+    "name": "Mohamed Ibrahim",
+    "image": "images/instructor-5.jpg"
+  }
+}

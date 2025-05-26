@@ -68,7 +68,7 @@ userIcon.addEventListener("click", (_) => {
     form.appendChild(butLogin);
     let signBut = document.createElement("a");
     signBut.classList.add("sign-but");
-    signBut.href = "sign-in.html";
+    signBut.href = "signin.html";
     signBut.appendChild(document.createTextNode("SIGN IN"));
     popup.appendChild(signBut);
     let line = document.createElement("div");

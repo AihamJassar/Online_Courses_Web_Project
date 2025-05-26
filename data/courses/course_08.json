@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "title": "Course 8 Title",
+  "description": "Build real applications and gain practical experience",
+  "category": "Web Development",
+  "rating": 4.0,
+  "reviews": 293,
+  "students": 249,
+  "lectures": 24,
+  "hours": 17,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  }
+}

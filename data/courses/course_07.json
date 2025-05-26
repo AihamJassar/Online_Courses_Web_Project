@@ -1,0 +1,15 @@
+{
+  "id": 7,
+  "title": "Course 7 Title",
+  "description": "Comprehensive course with real-world projects and case studies",
+  "category": "Web Development",
+  "rating": 4.9,
+  "reviews": 234,
+  "students": 998,
+  "lectures": 22,
+  "hours": 24,
+  "instructor": {
+    "name": "Sara Ali",
+    "image": "images/instructor-2.jpg"
+  }
+}

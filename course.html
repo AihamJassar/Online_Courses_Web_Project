@@ -1,12 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/course.css">
-    <title>Document</title>
+    <title>Course Details</title>
+    <link rel="icon" type="image/x-icon" href="favicon_32x32.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/course.css">
 </head>
+
 <body>
-    <script src="javascript/course.js"></script>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="#">Learn.com</a></h1>
+            <ul class="links" id="links">
+                <li><a href="/index.html#home" class="active">Home</a></li>
+                <li><a href="/index.html#about">About Us</a></li>
+                <li><a href="/index.html#courses">Courses</a></li>
+                <li><a href="/index.html#teachers">Teachers</a></li>
+                <li><a href="/index.html#contact">Contact</a></li>
+            </ul>
+            <div class="buttons">
+                <i class="fa-solid fa-bars fa-2x bars" id="bars"></i>
+                <i class="fa-solid fa-circle-user fa-2x user" id="user" title="acount"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="course-details">
+        <section class="course-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="title"></h1>
+                    <p class="course-description"></p>
+                    <div class="rating">
+                        <span class="stars"></span>
+                        <span class="reviews"></span>
+                    </div>
+                    <div class="meta-info">
+                        <span><i class="fas fa-user-graduate"></i> <span class="students"></span></span>
+                        <span><i class="fas fa-play-circle"></i> <span class="lectures"></span></span>
+                        <span><i class="fas fa-clock"></i> <span class="hours"></span></span>
+                    </div>
+                    <div class="instructor">
+                        <img class="instructor-img" src="" alt="Instructor">
+                        <span class="instructor-name"></span>
+                    </div>
+                    <div class="price">
+                        <span class="current-price"></span>
+                        <span class="original-price"></span>
+                        <span class="discount"></span>
+                    </div>
+                    <button class="enroll-btn">Enroll Now <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="hero-image">
+                    <img class="course-img" src="" alt="Course thumbnail">
+                    <div class="preview-btn">
+                        <i class="fas fa-play"></i> Preview
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="course-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="overview">
+                        <i class="fas fa-info-circle"></i> Overview
+                    </button>
+                    <button class="tab-btn" data-tab="curriculum">
+                        <i class="fas fa-list-ol"></i> Curriculum
+                    </button>
+                    <button class="tab-btn" data-tab="reviews">
+                        <i class="fas fa-star"></i> Reviews
+                    </button>
+                    <button class="tab-btn" data-tab="faq">
+                        <i class="fas fa-question-circle"></i> FAQ
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tab-content">
+            <div class="container">
+                <div id="overview" class="tab-pane active">
+                    <h2><i class="fas fa-info-circle"></i> About This Course</h2>
+                    <p>This course will teach you everything you need to become a professional web developer. We'll
+                        start from the basics and go to advanced levels.</p>
+
+                    <h3><i class="fas fa-graduation-cap"></i> What You'll Learn</h3>
+                    <ul class="learning-list">
+                        <li><i class="fas fa-check"></i> Build websites using HTML & CSS</li>
+                        <li><i class="fas fa-check"></i> Add interactivity with JavaScript</li>
+                        <li><i class="fas fa-check"></i> Work with libraries like React</li>
+                        <li><i class="fas fa-check"></i> Build complete web applications</li>
+                    </ul>
+
+                    <h3><i class="fas fa-tools"></i> Requirements</h3>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-check"></i> A computer</li>
+                        <li><i class="fas fa-check"></i> Internet connection</li>
+                        <li><i class="fas fa-check"></i> No prior experience needed</li>
+                    </ul>
+                </div>
+
+                <div id="curriculum" class="tab-pane">
+                    <h2><i class="fas fa-list-ol"></i> Course Content</h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-btn">
+                                <span>Section 1: Web Development Fundamentals</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><i class="fas fa-play-circle"></i> Course Introduction (10:00)</li>
+                                    <li><i class="fas fa-play-circle"></i> HTML Basics (25:30)</li>
+                                    <li><i class="fas fa-play-circle"></i> CSS Fundamentals (32:15)</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- More sections can be added here -->
+                    </div>
+                </div>
+
+                <div id="reviews" class="tab-pane">
+                    <h2><i class="fas fa-star"></i> Student Reviews</h2>
+                    <div class="review">
+                        <div class="review-header">
+                            <img src="images/testimonies-002.jpg" alt="Student">
+                            <div>
+                                <h4>Mohamed Ali</h4>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <p>Excellent course, clear and detailed explanations. Highly recommended for beginners.</p>
+                    </div>
+                    <!-- More reviews can be added here -->
+                </div>
+
+                <div id="faq" class="tab-pane">
+                    <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                    <div class="faq-item">
+                        <button class="faq-btn">
+                            <span>How do I access the course after purchase?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-content">
+                            <p>After completing your purchase, login credentials will be sent to your email, and you can
+                                access all course content through your account on our website.</p>
+                        </div>
+                    </div>
+                    <!-- More FAQs can be added here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="related-courses">
+            <div class="container">
+                <h2><i class="fas fa-book-open"></i> Related Courses</h2>
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <img src="images/course-002.jpg" alt="Advanced JavaScript">
+                        <h3>Advanced JavaScript</h3>
+                        <div class="course-meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-user-graduate"></i> 300</span>
+                        </div>
+                        <div class="price">$89.99</div>
+                    </div>
+                    <!-- More courses can be added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="top">
+                <h2 class="logo">Learn.com</h2>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-twitter-square fa-2x"></i></a>
+                    <a href="#"> <i class="fa-brands fa-whatsapp-square fa-2x"></i></a>
+                    <a href="#"> <i class="fa-brands fa-youtube-square fa-2x"></i></a>
+                    <a href="#"> <i class="fa-brands fa-facebook-square fa-2x"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <p>copyright&copy;2025 <span>Learn.com</span> All rights reserved</p>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="./javascript/course.js"></script>
 </body>
+
 </html>

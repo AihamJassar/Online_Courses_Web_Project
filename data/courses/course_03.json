@@ -1,0 +1,15 @@
+{
+  "id": 3,
+  "title": "Course 3 Title",
+  "description": "Comprehensive course with real-world projects and case studies",
+  "category": "Web Development",
+  "rating": 4.3,
+  "reviews": 419,
+  "students": 502,
+  "lectures": 25,
+  "hours": 11,
+  "instructor": {
+    "name": "John Doe",
+    "image": "images/instructor-3.jpg"
+  }
+}

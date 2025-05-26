@@ -1,0 +1,92 @@
+[
+  {
+    "ref": "/course.html",
+    "url": "./images/course-001.jpg",
+    "_category": "Development",
+    "_rating": "4.2",
+    "_title": "Complete JavaScript Bootcamp",
+    "_studentsCount": 12045,
+    "_price": 129
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-002.jpg",
+    "_category": "Design",
+    "_rating": "4.7",
+    "_title": "Master UI/UX Design",
+    "_studentsCount": 8543,
+    "_price": 99
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-003.jpg",
+    "_category": "Marketing",
+    "_rating": "4.5",
+    "_title": "Digital Marketing Fundamentals",
+    "_studentsCount": 9456,
+    "_price": 89
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-004.jpg",
+    "_category": "Development",
+    "_rating": "4.8",
+    "_title": "React Native from Zero to Hero",
+    "_studentsCount": 13278,
+    "_price": 139
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-005.jpg",
+    "_category": "Business",
+    "_rating": "4.1",
+    "_title": "Entrepreneurship Essentials",
+    "_studentsCount": 4875,
+    "_price": 79
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-006.jpg",
+    "_category": "Photography",
+    "_rating": "4.3",
+    "_title": "Professional Photography Masterclass",
+    "_studentsCount": 6742,
+    "_price": 109
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-007.jpg",
+    "_category": "Design",
+    "_rating": "4.6",
+    "_title": "Figma & Prototyping",
+    "_studentsCount": 7531,
+    "_price": 95
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-008.jpg",
+    "_category": "Development",
+    "_rating": "4.9",
+    "_title": "Advanced Python Programming",
+    "_studentsCount": 16234,
+    "_price": 149
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-009.jpg",
+    "_category": "Finance",
+    "_rating": "4.0",
+    "_title": "Personal Finance 101",
+    "_studentsCount": 4231,
+    "_price": 69
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-010.jpg",
+    "_category": "Music",
+    "_rating": "4.4",
+    "_title": "Guitar for Beginners",
+    "_studentsCount": 5867,
+    "_price": 75
+  }
+]

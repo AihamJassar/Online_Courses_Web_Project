@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "title": "Course 10 Title",
+  "description": "Step-by-step guide to mastering this field",
+  "category": "Web Development",
+  "rating": 4.1,
+  "reviews": 445,
+  "students": 1900,
+  "lectures": 31,
+  "hours": 21,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  }
+}

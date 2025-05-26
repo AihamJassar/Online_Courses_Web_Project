@@ -1,0 +1,15 @@
+{
+  "id": 17,
+  "title": "Course 17 Title",
+  "description": "Build real applications and gain practical experience",
+  "category": "Web Development",
+  "rating": 4.5,
+  "reviews": 127,
+  "students": 336,
+  "lectures": 36,
+  "hours": 15,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  }
+}

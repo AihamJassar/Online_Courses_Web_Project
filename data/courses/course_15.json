@@ -1,0 +1,15 @@
+{
+  "id": 15,
+  "title": "Course 15 Title",
+  "description": "Learn to build full-stack web applications from scratch to professional level",
+  "category": "Web Development",
+  "rating": 4.6,
+  "reviews": 152,
+  "students": 1191,
+  "lectures": 29,
+  "hours": 27,
+  "instructor": {
+    "name": "Mohamed Ibrahim",
+    "image": "images/instructor-5.jpg"
+  }
+}

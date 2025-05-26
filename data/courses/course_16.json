@@ -1,0 +1,15 @@
+{
+  "id": 16,
+  "title": "Course 16 Title",
+  "description": "Master the essentials and advanced features of the subject",
+  "category": "Web Development",
+  "rating": 4.9,
+  "reviews": 494,
+  "students": 1022,
+  "lectures": 26,
+  "hours": 15,
+  "instructor": {
+    "name": "Lina Hassan",
+    "image": "images/instructor-4.jpg"
+  }
+}

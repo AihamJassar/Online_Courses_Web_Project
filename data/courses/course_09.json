@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "title": "Course 9 Title",
+  "description": "Master the essentials and advanced features of the subject",
+  "category": "Web Development",
+  "rating": 4.8,
+  "reviews": 466,
+  "students": 1467,
+  "lectures": 50,
+  "hours": 22,
+  "instructor": {
+    "name": "Mohamed Ibrahim",
+    "image": "images/instructor-5.jpg"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": 2,
+  "title": "Course 2 Title",
+  "description": "Comprehensive course with real-world projects and case studies",
+  "rating": 4.3,
+  "reviews": 329,
+  "students": 1340,
+  "lectures": 31,
+  "hours": 7,
+  "instructor": {
+    "name": "Ahmed Mohamed",
+    "image": "images/instructor-1.jpg"
+  },
+  "price": {
+    "current": 99.99,
+    "original": 199.99,
+    "discount": "50% off"
+  },
+  "image": "images/course-003.jpg"
+}

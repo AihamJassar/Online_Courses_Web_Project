@@ -1,0 +1,92 @@
+[
+  {
+    "ref": "/course.html",
+    "url": "./images/course-011.jpg",
+    "_category": "Development",
+    "_rating": "4.6",
+    "_title": "Fullstack Web Development",
+    "_studentsCount": 13902,
+    "_price": 159
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-012.jpg",
+    "_category": "Photography",
+    "_rating": "4.2",
+    "_title": "Mobile Photography Secrets",
+    "_studentsCount": 4987,
+    "_price": 85
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-013.jpg",
+    "_category": "Language",
+    "_rating": "4.7",
+    "_title": "Learn English for Beginners",
+    "_studentsCount": 10123,
+    "_price": 92
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-014.jpg",
+    "_category": "Health",
+    "_rating": "4.3",
+    "_title": "Nutrition and Healthy Living",
+    "_studentsCount": 6378,
+    "_price": 88
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-015.jpg",
+    "_category": "Design",
+    "_rating": "4.8",
+    "_title": "Illustrator CC for Beginners",
+    "_studentsCount": 7932,
+    "_price": 104
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-016.jpg",
+    "_category": "Development",
+    "_rating": "4.5",
+    "_title": "Node.js API Development",
+    "_studentsCount": 11587,
+    "_price": 122
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-017.jpg",
+    "_category": "Marketing",
+    "_rating": "4.1",
+    "_title": "SEO Basics and Tools",
+    "_studentsCount": 5482,
+    "_price": 91
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-018.jpg",
+    "_category": "Finance",
+    "_rating": "4.0",
+    "_title": "Investing for Beginners",
+    "_studentsCount": 7123,
+    "_price": 89
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-019.jpg",
+    "_category": "Language",
+    "_rating": "4.6",
+    "_title": "Master Spanish Language",
+    "_studentsCount": 8341,
+    "_price": 107
+  },
+  {
+    "ref": "/course.html",
+    "url": "./images/course-020.jpg",
+    "_category": "Health",
+    "_rating": "4.9",
+    "_title": "Yoga for Mental Health",
+    "_studentsCount": 9423,
+    "_price": 97
+  }
+]
